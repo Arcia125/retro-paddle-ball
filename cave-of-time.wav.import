@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cave-of-time.wav-b044b71cc0b29ceab5ec36b5b15f3b9a.sample"
+
+[deps]
+
+source_file="res://cave-of-time.wav"
+dest_files=[ "res://.import/cave-of-time.wav-b044b71cc0b29ceab5ec36b5b15f3b9a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

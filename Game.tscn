@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Game.gd" type="Script" id=1]
+[ext_resource path="res://Paddle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ScoreBoard.tscn" type="PackedScene" id=4]
+[ext_resource path="res://cave-of-time.wav" type="AudioStream" id=5]
+
+[node name="RootNode" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="Player1" parent="." index="0" instance=ExtResource( 2 )]
+
+player_number = 1
+
+[node name="Player2" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 1016, 32 )
+
+[node name="Ball" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 512, 192 )
+
+[node name="ScoreBoard" parent="." index="3" instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+
